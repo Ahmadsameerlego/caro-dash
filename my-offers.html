@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta settings -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawesome v6 style cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css"
+      integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap v5 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- main style => for arabic style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- english style => include both style.css and style-ltr.css in the english version -->
+    <!--<link rel="stylesheet" href="css/style-ltr.css" /> -->
+  </head>
+  <body>
+    <!-- .sidebar and .header in the layout and .content changes -->
+
+    <!-- shows only in 768px screnn -->
+    <span class="icon">
+      <i class="fas fa-bars" id="bars"></i>
+    </span>
+
+    <!-- start header of dashboard -->
+    <div class="header flex-b">
+      <div class="dash-logo flex-c">
+        <img src="photos/white-logo.png" alt="logo" />
+      </div>
+
+      <aside class="flex-b">
+        <!-- language -->
+        <a href="#">
+          <i class="fa-solid fa-globe ml-1 mr-1 main-color"></i>
+        </a>
+
+        <!-- notification -->
+        <a href="alerts.html">
+          <i class="fa-regular fa-bell ml-1 mr-1 main-color"></i>
+        </a>
+      </aside>
+    </div>
+    <!-- end header of dashboard -->
+
+    <!-- start list of main links -->
+    <div class="sidebar">
+      <!-- start ul links -->
+      <div class="mainLinks">
+        <ul style="list-style: none">
+          <li>
+            <!-- class "active" set main color to the current page -->
+            <a href="dashboard.html">
+              <i class="fa-solid fa-house"></i>
+              <h4>الرئيسية</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="personal-info.html">
+              <i class="fa-regular fa-user"></i>
+              <h4>الملف الشخصي</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="add-offer.html">
+              <i class="fa-regular fa-square-plus"></i>
+              <h4>اضافة عرض</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="activate-offer.html">
+              <i class="fa-solid fa-qrcode"></i>
+              <h4>تفعيل عرض</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="my-offers.html" class="active">
+              <i class="fa-brands fa-salesforce"></i>
+              <h4>عروضي</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="branches.html">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>الفروع</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="service-suplliers.html">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <h4>عروض مزودي الخدمة</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="ads-order.html">
+              <i class="fa-brands fa-adversal"></i>
+              <h4>طلب اعلان</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="finincial-accounts.html">
+              <i class="fa-solid fa-calculator"></i>
+              <h4>الحسابات المالية</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="how-app-work.html">
+              <i class="fa-solid fa-gear"></i>
+              <h4>كيفية عمل التطبيق</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="conditions-restircs.html">
+              <i class="fa-regular fa-file-lines"></i>
+              <h4>الشروط والاحكام</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="privacy-policy.html">
+              <i class="fa-solid fa-lock"></i>
+              <h4>سياسة الخصوصية</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="common-questions.html">
+              <i class="fa-regular fa-circle-question"></i>
+              <h4>الاسئلة الشائعة</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="who-we-are.html">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <h4>من نحن</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact-us.html">
+              <i class="fa-solid fa-phone"></i>
+              <h4>تواصل معنا</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <h4>تسجيل الخروج</h4>
+            </a>
+          </li>
+
+          <!-- socail media icons -->
+          <div class="social-media flex-c">
+            <a href="#">
+              <span class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+            </a>
+
+            <a href="#">
+              <span class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+            </a>
+
+            <a href="#">
+              <span class="linked-in">
+                <i class="fa-brands fa-invision"></i>
+              </span>
+            </a>
+
+            <a href="#">
+              <span class="telegram">
+                <i class="fa-brands fa-telegram"></i>
+              </span>
+            </a>
+          </div>
+        </ul>
+      </div>
+      <!-- end ul links -->
+    </div>
+    <!-- end list of main links -->
+
+    <!-- content of the page -->
+    <div class="content pb-5">
+      <!-- start tabs -->
+
+      <!-- start tabs header -->
+      <ul
+        class="nav nav-pills nav-pills3 flex-b mb-5 mb-3"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="new-orders-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#new-orders"
+            type="button"
+            role="tab"
+            aria-controls="new-orders"
+            aria-selected="true"
+          >
+            العروض الحالية
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="wainting-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#wainting"
+            type="button"
+            role="tab"
+            aria-controls="wainting"
+            aria-selected="false"
+          >
+            العروض المنتهية
+          </button>
+        </li>
+      </ul>
+      <!-- end tabs header -->
+
+      <!-- start offers images -->
+      <section class="offers-images">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="offer-image flex-col">
+              <img src="photos/car3.jpg" alt="car image" class="mb-3" />
+              <h6>مركز صيانة ورش</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="offer-image flex-col">
+              <img src="photos/car4.jpg" alt="car image" class="mb-3" />
+              <h6>معارض سيارات</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="offer-image flex-col">
+              <img src="photos/car3.jpg" alt="car image" class="mb-3" />
+              <h6>قطع غيار وتسليح</h6>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="offer-image flex-col">
+              <img src="photos/car4.jpg" alt="car image" class="mb-3" />
+              <h6>زينة سيارات</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end offers images -->
+
+      <!-- search input -->
+      <form action="" class="t-input mx-auto mt-3 mb-3" style="width: 50%">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="form-control"
+          placeholder="ابحث باسم العرض"
+        />
+        <i class="fa-solid fa-magnifying-glass" style="top: 37%"></i>
+      </form>
+      <!-- start tabs content -->
+      <div class="tab-content" id="pills-tabContent">
+        <!-- العروض الحالية -->
+        <div
+          class="tab-pane fade show active mt-4"
+          id="new-orders"
+          role="tabpanel"
+          aria-labelledby="new-orders-tab"
+        >
+          <div class="row w-100 off-row justify-content-evenly">
+            <!-- single order -->
+            <div class="col-lg-6 mb-3">
+              <div class="order animation">
+                <a href="single-offer.html" style="font-size: 12px">
+                  <div class="product-info d-flex" class="">
+                    <img
+                      src="photos/car3.jpg"
+                      alt="product"
+                      class="product-image"
+                    />
+
+                    <div class="client">
+                      <div class="flex-b mb-2">
+                        <h6 class="fw-bold black-color">اسم العرض</h6>
+                        <!-- rate -->
+                        <div class="rating-stars">
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs0"
+                            checked
+                            readonly
+                          /><label for="rs0"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs1"
+                            readonly
+                          /><label for="rs1"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs2"
+                            readonly
+                          /><label for="rs2"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs3"
+                            readonly
+                          /><label for="rs3"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs4"
+                            readonly
+                          /><label for="rs4"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs5"
+                            readonly
+                          /><label for="rs5"></label>
+                        </div>
+                      </div>
+                      <div class="client-info flex-b mb-3">
+                        <div class="d-flex">
+                          <span class="client-job client-job2"
+                            >مركز صيانة وورش</span
+                          >
+                        </div>
+                      </div>
+
+                      <p class="gray-color">
+                        هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال
+                        على نص يمكن ان يستبدل
+                      </p>
+
+                      <div class="product-price f-flex">
+                        <span class="new-price fw-bold">100رس</span>
+                        <span class="old-price"> 200 رس </span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+
+                  <div class="client-contact flex-b">
+                    <div class="contact-phone d-flex align-items-baseline">
+                      <i class="fa-solid fa-phone"></i>
+                      <p>01013746111</p>
+                    </div>
+
+                    <div class="timer d-flex align-items-baseline">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>3:5:3</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- single order -->
+            <div class="col-lg-6 mb-3">
+              <div class="order animation">
+                <a href="single-offer.html" style="font-size: 12px">
+                  <div class="product-info d-flex" class="">
+                    <img
+                      src="photos/car3.jpg"
+                      alt="product"
+                      class="product-image"
+                    />
+
+                    <div class="client">
+                      <div class="flex-b mb-2">
+                        <h6 class="fw-bold black-color">اسم العرض</h6>
+                        <!-- rate -->
+                        <div class="rating-stars">
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs0"
+                            checked
+                            readonly
+                          /><label for="rs0"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs1"
+                            readonly
+                          /><label for="rs1"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs2"
+                            readonly
+                          /><label for="rs2"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs3"
+                            readonly
+                          /><label for="rs3"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs4"
+                            readonly
+                          /><label for="rs4"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs5"
+                            readonly
+                          /><label for="rs5"></label>
+                        </div>
+                      </div>
+                      <div class="client-info flex-b mb-3">
+                        <div class="d-flex">
+                          <span class="client-job client-job2"
+                            >مركز صيانة وورش</span
+                          >
+                        </div>
+                      </div>
+
+                      <p class="gray-color">
+                        هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال
+                        على نص يمكن ان يستبدل
+                      </p>
+
+                      <div class="product-price f-flex">
+                        <span class="new-price fw-bold">خصم 15%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+
+                  <div class="client-contact flex-b">
+                    <div class="contact-phone d-flex align-items-baseline">
+                      <i class="fa-solid fa-phone"></i>
+                      <p>01013746111</p>
+                    </div>
+
+                    <div class="timer d-flex align-items-baseline">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>3:5:3</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- العروض المنتهية -->
+        <div
+          class="tab-pane fade mt-4"
+          id="wainting"
+          role="tabpanel"
+          aria-labelledby="wainting-tab"
+        >
+          <div class="row w-100 off-row justify-content-evenly">
+            <!-- single order -->
+            <div class="col-lg-6 mb-3">
+              <div class="order animation">
+                <a href="single-offer.html" style="font-size: 12px">
+                  <div class="product-info d-flex" class="">
+                    <img
+                      src="photos/car3.jpg"
+                      alt="product"
+                      class="product-image"
+                    />
+
+                    <div class="client">
+                      <div class="flex-b mb-2">
+                        <h6 class="fw-bold black-color">اسم العرض</h6>
+                        <!-- rate -->
+                        <div class="rating-stars">
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs0"
+                            checked
+                            readonly
+                          /><label for="rs0"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs1"
+                            readonly
+                          /><label for="rs1"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs2"
+                            readonly
+                          /><label for="rs2"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs3"
+                            readonly
+                          /><label for="rs3"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs4"
+                            readonly
+                          /><label for="rs4"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs5"
+                            readonly
+                          /><label for="rs5"></label>
+                        </div>
+                      </div>
+                      <div class="client-info flex-b mb-3">
+                        <div class="d-flex">
+                          <span class="client-job client-job2"
+                            >مركز صيانة وورش</span
+                          >
+                        </div>
+                      </div>
+
+                      <p class="gray-color">
+                        هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال
+                        على نص يمكن ان يستبدل
+                      </p>
+
+                      <div class="product-price f-flex">
+                        <span class="new-price fw-bold">100رس</span>
+                        <span class="old-price"> 200 رس </span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+
+                  <div class="client-contact flex-b">
+                    <div class="contact-phone d-flex align-items-baseline">
+                      <i class="fa-solid fa-phone"></i>
+                      <p>01013746111</p>
+                    </div>
+
+                    <div class="timer d-flex align-items-baseline">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>3:5:3</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- single order -->
+            <div class="col-lg-6 mb-3">
+              <div class="order animation">
+                <a href="activate-item.html" style="font-size: 12px">
+                  <div class="product-info d-flex" class="">
+                    <img
+                      src="photos/car3.jpg"
+                      alt="product"
+                      class="product-image"
+                    />
+
+                    <div class="client">
+                      <div class="flex-b mb-2">
+                        <h6 class="fw-bold black-color">اسم العرض</h6>
+                        <!-- rate -->
+                        <div class="rating-stars">
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs01"
+                            checked
+                            readonly
+                          /><label for="rs01"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs11"
+                            readonly
+                          /><label for="rs11"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs21"
+                            readonly
+                          /><label for="rs21"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs31"
+                            readonly
+                          /><label for="rs31"></label>
+                          <input
+                            type="radio"
+                            name="rating"
+                            id="rs41"
+                            readonly
+                          /><label for="rs41"></label>
+                        </div>
+                      </div>
+                      <div class="client-info flex-b mb-3">
+                        <div class="d-flex">
+                          <span class="client-job client-job2"
+                            >مركز صيانة وورش</span
+                          >
+                        </div>
+                      </div>
+
+                      <p class="gray-color">
+                        هذا النص هو مثال على نص يمكن ان يستبدل هذا النص هو مثال
+                        على نص يمكن ان يستبدل
+                      </p>
+
+                      <div class="product-price f-flex">
+                        <span class="new-price fw-bold">خصم 15%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+
+                  <div class="client-contact flex-b">
+                    <div class="contact-phone d-flex align-items-baseline">
+                      <i class="fa-solid fa-phone"></i>
+                      <p>01013746111</p>
+                    </div>
+
+                    <div class="timer d-flex align-items-baseline">
+                      <i class="fa-regular fa-clock"></i>
+                      <p>3:5:3</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start tabs content -->
+    </div>
+
+    <!-- plugins -->
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- bootstrap v5 cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome v6 js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/regular.min.js"
+      integrity="sha512-eH31QC2/CLTAQpugtCMQh/w68mbefCbaDTsSbmqOk86RICy523PnuNMaFfQ5cAkwwJ1dsnn7OUt8bfkF24zprg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- all scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

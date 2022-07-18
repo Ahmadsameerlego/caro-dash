@@ -1,0 +1,50 @@
+body{
+    direction: ltr;
+    text-align: left;
+}
+.sidebar{
+    left: 0;
+    right: auto;
+}
+
+.content {
+    right: 0;
+    left: auto;
+    padding-left: 80px;
+    padding-right: inherit;
+}
+.mainLinks a svg{
+    margin-right: 1rem;
+    margin-left: 0;
+}
+.sidebar .mainLinks a h4::after {
+    left: -20px;
+    right: auto;
+}
+.sidebar .mainLinks a:hover h4 {
+    padding-left: 25px;
+    padding-right: inherit;
+}
+.sidebar .mainLinks a:hover h4::after {
+    opacity: 1;
+    left: 0;
+    right: auto;
+    font-size: 12px !important;
+}
+.social-media span svg{
+    margin-right: auto;
+    margin-left: auto;
+}
+.t-input .fa-arrow-up-from-bracket, .t-input .fa-angle-down, .t-input .fa-location-dot, .p-input .fa-location-dot, .p-input .fa-arrow-up-from-bracket, .t-input .fa-magnifying-glass{right: 5%; left: auto;}
+.custom-radio [type="radio"]:checked + label, .custom-radio [type="radio"]:not(:checked) + label{padding-right: 20px; padding-left: inherit;}
+.custom-radio [type="radio"]:checked + label:before, .custom-radio [type="radio"]:not(:checked) + label:before{left: -22px; right: auto;}
+.custom-radio [type="radio"]:checked + label:after, .custom-radio [type="radio"]:not(:checked) + label:after{left: -19px; right: auto;}
+.accordion-button::after{margin-right: 0; margin-left: auto;}
+.add-order-type{margin-left:22px; margin-right: auto;}
+.header aside{margin-right: 67px; margin-left: auto;}
+input[id='address']{padding-right: 44px; padding-left: inherit;}
+.add-order-type {
+    margin-right: 22px;
+    margin-left: auto;
+}
+.show-info.phone{margin-right: 13px; margin-left: auto;}
